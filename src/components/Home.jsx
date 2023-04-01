@@ -121,11 +121,10 @@ const Home = () => {
       <div style={{ position: "relative" }}>
         <img
           className="d-block w-100 "
-          style={{ height: "800px", borderRadius: "26px" }}
+          style={{height: "900px", borderRadius: "26px" }}
           src={`${IMAGE_PATH}${selectMovies.backdrop_path}`}
           alt="First slide"
         />
-
         <Carousel.Caption>
           {playTrailer ? (
             <button className="closebtn" onClick={() => setplayTrailer(false)}>

@@ -15,10 +15,12 @@ const Cards = ({ movies, selectMovie }) => {
         onClick={() => selectMovie(movies)}
       >
         {movies.poster_path ? (
-          <img
-            className="movie-cover"
-            src={`${IMAGE_PATH}${movies.poster_path}`}
-          />
+          <a href="#">
+            <img
+              className="movie-cover"
+              src={`${IMAGE_PATH}${movies.poster_path}`}
+            />
+          </a>
         ) : (
           <img
             className="Nomovie-cover"
