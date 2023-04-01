@@ -88,7 +88,7 @@ const Home = () => {
   };
   return (
     <div>
-      <Navbar className="navclr" expand="lg">
+      <Navbar className="navclr fixed-top" expand="lg">
         <Container fluid>
           <Navbar.Brand href="#">
             <h1 className="heading">
