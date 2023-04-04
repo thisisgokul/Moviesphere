@@ -9,7 +9,6 @@ import Carousel from "react-bootstrap/Carousel";
 import YouTube from "react-youtube";
 import { React, useEffect, useState } from "react";
 import axios from "axios";
-
 import "../components/App.css";
 
 const API_KEY = "57d1f9b8dd0d56da487cfda0ff6fc323";
@@ -51,6 +50,7 @@ const Home = () => {
     setplayTrailer(false);
     const data = await fetchMovie(movie.id);
     setSelectMovies(data);
+    
   };
 
   useEffect(() => {
@@ -70,13 +70,13 @@ const Home = () => {
 
     return (
       <Col
-        sm={12}
+        xm={6}
         md={12}
         lg={12}
         className="d-flex justify-content-center my-5"
       >
         <YouTube
-          className=" youtbeplayer my-4"
+          className=" youtbeplayer my-4 "
           videoId={key}
           opts={{
             width: "100%",
@@ -142,8 +142,8 @@ const Home = () => {
             <h1 className="title display-4 display-md-3">
               {selectMovies.title}
             </h1>
-            <p className="overview lead lead-md">
-              {selectMovies.overview ? selectMovies.overview : null}
+            <p className="overview lead lead-md ">
+              {selectMovies.overview ? selectMovies.overview : null }
             </p>
           </Col>
         </Carousel.Caption>
@@ -152,7 +152,7 @@ const Home = () => {
       <div className=" container container-fluid">
         <Row className="outer pt-4">
           {displayMovies.map((movie, index) => (
-            <Col key={index} sm={3} md={3} lg={2}>
+            <Col key={index} className="p-3" xs={6} sm={6} md={4} lg={2}>
               <Cards movies={movie} selectMovie={selectTrailerMovie} />
             </Col>
           ))}

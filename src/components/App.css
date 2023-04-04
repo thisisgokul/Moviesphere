@@ -5,9 +5,8 @@ body {
 
 .outer {
   background-color: #0f1014;
-  gap: 30px;
   color: aliceblue;
-  margin-top: 33px;
+  margin-top: 33px !important;
 }
 .movie-cover {
   width: 100%;
@@ -19,6 +18,7 @@ body {
 .movie-title {
   font-size: 22px;
   font-family: "Courier New", Courier, monospace;
+  color: #f1e5e5f5;
 }
 .navclr {
   background-color: #0d0d10;
@@ -42,6 +42,7 @@ body {
   top: 55;
   bottom: 0;
 }
+
 .closebtn {
   position: absolute;
   z-index: 1;
