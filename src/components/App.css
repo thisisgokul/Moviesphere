@@ -26,7 +26,7 @@ body {
 }
 .heading {
   color: aliceblue;
-  font-family: fantasy;
+  font-family: inherit !important;
 }
 .navbar-toggler-icon {
   color: aliceblue !important;
